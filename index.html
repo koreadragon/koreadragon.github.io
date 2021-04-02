@@ -1,9 +1,0 @@
-Hello World
- [UIView animateWithDuration:0.25 animations:^{
-        [self.yellowView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(arc4random() % 100 + 20);
-        }];
-立马调用layoutIfNeeded方法才能在动画时间内更改布局并产生动画，否则没有动画
-        [self.view layoutIfNeeded];
-    }];
-
